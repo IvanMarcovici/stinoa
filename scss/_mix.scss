@@ -1,0 +1,57 @@
+@mixin titu($porcentaje){
+
+		width: $porcentaje;
+		margin-top: 0.5rem;
+		margin-left:1%;
+		border-radius:$bRad;
+		border-style:none;
+		background-color:$bgTit;
+		text-align:$med;
+}
+
+@mixin texTitu ($colTit){
+	h2, h3 {
+		font-size:2rem;
+		color:$colTit;
+	}
+}
+
+@mixin box($porcentaje){
+	width:$porcentaje;
+	flex-direction:row;
+}
+@mixin botonera($porcentaje){
+	width:$porcentaje;
+	background-color:$bgBtnCol;
+	margin-left: ((100%-$porcentaje)/2);
+	margin-right: ((100%-$porcentaje)/2);
+	padding:.25rem;
+	text-align:$med;
+	border-radius:$bRad;
+	ul{
+		list-style: none;
+		margin-bottom: 0%;
+	}
+}
+@mixin boton($porcentaje){
+
+	li {
+		min-width: 10%;
+		display: inline-block;
+		background-color:$btnCol;
+		border-radius:$bRad;
+		;
+		padding: ($remi/2);
+		
+		}
+		a{
+			text-decoration: none;
+			color:$btnTxtCol;
+			margin-left: $mp;
+			margin-right: $mp
+		}
+		li:hover{
+			background-color:$bgBtnColH;
+		} 
+	}
+	
