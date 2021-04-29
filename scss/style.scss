@@ -23,12 +23,9 @@ body{
 	@include titu(98%);
 	@include texTitu(white);
 	margin-bottom:1rem;
-	color:white;
-
+	color:$azul;
+	text-shadow: -1px 1px 1px white;
 }
-
-
-
 .conte{
 	display:flex;
 	width:90%;
@@ -36,9 +33,8 @@ body{
 	flex-wrap:wrap;
 }
 
-
 .box{
-	@include box(15%);
+	@include box(25%);
 }
 .boxImg {
 	@extend .box;
@@ -49,51 +45,68 @@ body{
 	}
 }
 .boxText{
-	@include box(85%);
+	@include box(75%);
 
 }
 .boxText{
 	@extend .box;
-	color:#1fd04b;
 	p{
 		text-align:center;
 		margin-left:1rem;
 		margin-right:1rem;
+		padding-top:1rem;
 		line-height:1.5rem;
 		word-spacing:0.3rem;
 		font-size:1.4rem;
+		color:$azul;
 	}
 }
-
-.botonera{
-	@include botonera(95%);
-	@include boton (10%);
+.bot{
+	color:white;
+	background-color:black;
+	border-color:black;
+}
+.hambu{
+	background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.bgBody{
+	background-color: #626262;
 }
 .bgGrid{
-	background-color: $bgGrid;
+	background-color: black;
 	border-radius: $bRad;
 	margin-top: 15px;
 	display:flex;
 }
 .gridBox{
+	margin-right:4%;
+	margin-left:4%;
+	margin-top:1%;
+	margin-bottom:1%;
+	border-radius: $bRad;
+	color:#756cff;
 	img{
- 	width:15rem;
+ 	width:10rem;
  	height: auto;
  	object-fit: fill;
  	border-radius: 50%;
 	}
+	h3{
+		text-align:center;
+		font-size:1.4rem;
+	}
  	p{
 		font-family: 'Work Sans', sans-serif;
-		margin-left: 2vh;
-		margin-right: 2vh;
-		text-align: justify;
-		font-size: 1.3rem;
-		font-weight:500;
-		color:green;
+		margin-left: 2%;
+		margin-right: 2%;
+		font-size: 1.2rem;
+		font-weight:700;
+		text-align:center;
+		
+
  	}
  }
- 
-footer{
+ footer{
 	width: 98%;
 	min-height: $mp;
 	background-color: silver;

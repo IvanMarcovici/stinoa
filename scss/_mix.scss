@@ -5,14 +5,15 @@
 		margin-left:1%;
 		border-radius:$bRad;
 		border-style:none;
-		background-color:$bgTit;
+		background-color:black;
 		text-align:$med;
 }
 
-@mixin texTitu ($colTit){
+@mixin texTitu ($azul){
 	h2, h3 {
 		font-size:2rem;
-		color:$colTit;
+		color:$azul;
+		text-shadow: 0 0 1px white;
 	}
 }
 
