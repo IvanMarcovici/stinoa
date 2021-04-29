@@ -14,9 +14,19 @@
 		font-weight: $v;
 	}
 }
+.header{
+	width: 98%;
+	background-color:black;
+	margin-left: 1%;
+	margin-top: 1%;
+	border-radius: 1rem;
+	display:flex;
+
+}
 body{
 	margin:0px;
 	padding:0px;
+	background-color: #626262;
 }
 
 .titu{
@@ -62,15 +72,17 @@ body{
 	}
 }
 .bot{
-	color:white;
-	background-color:black;
-	border-color:black;
+	width: 40%;
+	margin-left: 30%;
+	margin-right: 30%;
 }
 .hambu{
 	background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-.bgBody{
-	background-color: #626262;
+.txtColor{
+	color:white;
+	text-shadow: -1px -2px 1px black;
+	font-size: 1.1rem;
 }
 .bgGrid{
 	background-color: black;
